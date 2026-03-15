@@ -78,9 +78,6 @@ strong {
 
 /* MENU  */
 .menu {
-    width: 1000px;
-
-    margin: 0 auto;
 }
 .menu-container {
     background-color: rgb(75, 75, 244);
@@ -102,10 +99,18 @@ strong {
 .menu a:hover {
     background-color: white;
     color: black;
+    
 }
+
+
 .menu a.active {
     background-color: white;
     color: black;
+}
+
+.menu a:active{
+    text-decoration: underline;
+    opacity: 0.8;
 }
 
 /* FORM  */
@@ -121,6 +126,10 @@ strong {
     height: 30px;
     border-radius: 3px;
     margin: 5px 0 5px;
+}
+
+.input:focus{
+    background-color: #ccc;
 }
 
 .form-container form label {
@@ -153,4 +162,25 @@ strong {
     width: 100%;
     height: 70px;
     margin-top: 5px;
+}
+
+.menu ul a {
+    display: flex;
+}
+
+.menu ul li {
+    border-left: 1px solid #ccc;
+}
+
+.menu ul li:last-child{
+    border-right: 1px solid #ccc;
+}
+
+.menu ul a::after{
+    content: "\25B6";
+    margin-left: 5px;
+}
+
+.menu a:hover::after{
+    content: "\25BC";
 }
