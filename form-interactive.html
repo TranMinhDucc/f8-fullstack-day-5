@@ -12,46 +12,47 @@
             <form action="" autocomplete="off">
                 <h1 class="center">Register</h1>
                 <div class="form">
-                    <label for="name">Name</label> <br />
-                    <input type="name" class="input" id="name" />
+                    <label for="name" class="obligatory">Name</label> <br />
+                    <input type="name" class="input" id="name" required/>
                 </div>
                 <div class="form">
-                    <label for="email">Email</label> <br />
-                    <input type="email" class="input" id="email" />
+                    <label for="email" class="obligatory">Email</label> <br />
+                    <input type="email" class="input" id="email" required/>
                 </div>
                 <div class="form">
-                    <label for="phone">Phone Number</label> <br />
-                    <input type="number" class="input" id="phone" />
+                    <label for="phone" class="obligatory">Phone Number</label> <br />
+                    <input type="number" class="input" id="phone" required/>
                 </div>
                 <div class="form">
-                    <label for="password">Password</label> <br />
-                    <input type="password" class="input" id="password" />
+                    <label for="password" class="obligatory">Password</label> <br />
+                    <input type="password" class="input" id="password" required/>
                 </div>
                 <div class="form">
-                    <label for="confirm-password">Confirm Password</label>
+                    <label for="confirm-password" class="obligatory">Confirm Password</label>
                     <br />
                     <input
                         type="password"
                         class="input"
                         id="confirm-password"
+                        required
                     />
                 </div>
-                <div class="form gender">
-                    <label >Gender</label> <br />
-                    <input type="radio" name="gender" value="Male" />
+                <fieldset class="form gender">
+                    <label class="obligatory">Gender</label> <br />
+                    <input type="radio" name="gender" value="Male" required/>
                     <label for="">Male</label>
-                    <input type="radio" name="gender" value="Female" />
+                    <input type="radio" name="gender" value="Female" required/>
                     <label for="">Female</label>
-                    <input type="radio" name="gender" value="Other" />
+                    <input type="radio" name="gender" value="Other" required/>
                     <label for="">Other</label>
-                </div>
+                </fieldset>
                 <div class="form">
                     <label for="date">Date of Birth</label> <br />
                     <input type="date" id="date" />
                 </div>
                 <div class="form address">
-                    <label for="address">Address</label> <br />
-                    <textarea name="" id="address"></textarea>
+                    <label for="address" class="obligatory">Address</label> <br />
+                    <textarea name="" id="address" required></textarea>
                 </div>
                 <div class="form">
                     <label for="avatar"
@@ -81,6 +82,7 @@
                         >Get Product Updates (Nhận cập nhật sản phẩm mới)
                     </label>
                 </div>
+                <button type="submit">Send</button>
             </form>
         </div>
     </body>
