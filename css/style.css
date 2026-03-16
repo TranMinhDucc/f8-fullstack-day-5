@@ -242,13 +242,12 @@ button:active {
     color: rgb(227, 224, 224);
 }
 
-
-
 .form-pricing-table .block:nth-child(2) {
     box-shadow: 30px 31px 15px -3px #ccc;
+    border: 2px solid black;
 }
 
-.form-pricing-table .block:hover{
+.form-pricing-table .block:hover {
     box-shadow: 0px 0px 100px -3px #ccc;
 }
 
@@ -269,7 +268,7 @@ button:active {
     margin-top: 20px;
 }
 
-.form-pricing-table ul li::before{
+.form-pricing-table ul li::before {
     content: "✓";
     font-size: 10px;
     margin-right: 10px;
@@ -285,4 +284,95 @@ button:active {
     margin: 50px auto 10px;
     padding: 15px 40px;
     font-weight: 600;
+}
+
+/* BLOG */
+
+.body-blog {
+    background: #fff;
+}
+
+.blog {
+    width: 1000px;
+    margin: 30px auto;
+}
+
+.blog img {
+    display: block;
+    margin: 30px auto;
+}
+
+.blog p {
+    font-size: 16px;
+}
+.blog p::first-line {
+    text-decoration: underline;
+    background-color: lightgreen;
+}
+.blog p::selection {
+    color: red;
+    background: yellow;
+}
+.blog h1 {
+    font-size: 32px;
+}
+.blog h2 {
+    font-size: 24px;
+    line-height: 2;
+}
+.blog h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.blog p:first-of-type::first-letter {
+    font-size: 200%;
+    font-weight: bold;
+    color: #000000;
+}
+
+blockquote::before {
+    content: "“";
+}
+
+.comment-box {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.img-avatar {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-cmt {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.info-user .content-cmt {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #ccc;
+}
+
+.info-user .name {
+    font-weight: 600;
+}
+
+.comment-box .time-cmt {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.comment-box .time-cmt p:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
